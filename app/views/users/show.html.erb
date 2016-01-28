@@ -2,3 +2,17 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
+<table class="table">
+  <tr>
+    <th scope="row">大学:</th>
+    <td><%= @user.university %></td>
+  </tr>
+  <tr>
+    <th scope="row">出身:</th>
+    <td><%= @user.area %></td>
+  </tr>
+  <tr>
+    <th scope="row">自己紹介:</th>
+    <td><%= @user.profile %></td>
+  </tr>
+</table>
