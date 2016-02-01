@@ -1,4 +1,7 @@
 <% if logged_in? %>
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
   <div class="row">
     <aside class="col-md-4">
       <section class="user_info">
