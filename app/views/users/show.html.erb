@@ -2,9 +2,15 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
-<p class="col-xs-1 col-xs-offset-4 text-primary">大学</p>
-<p class="col-xs-7"><%= @user.university %></p>
-<p class="col-xs-1 col-xs-offset-4 text-primary">出身</p>
+<div class="col-xs-12">
+  <p class="col-xs-1 col-xs-offset-4 text-primary">大学</p>
+  <p class="col-xs-7"><%= @user.university %></p>
+</div>
+<div class="col-xs-12">
+  <p class="col-xs-1 col-xs-offset-4 text-primary">出身</p>
 <p class="col-xs-7"><%= @user.area %></p>
-<p class="col-xs-1 col-xs-offset-4 text-primary">自己紹介</p>
+</div>
+<div class="col-xs-12">
+  <p class="col-xs-1 col-xs-offset-4 text-primary">自己紹介</p>
 <p class="col-xs-7"><%= @user.profile %></p>
+</div>
