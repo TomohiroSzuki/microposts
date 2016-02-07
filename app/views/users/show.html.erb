@@ -5,6 +5,8 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+      <p><%= link_to "フォロー", followings_user_path(@user) %>(<%= @user.following_relationships.count %>)</p>
+      <p><%= link_to "フォロワー", followers_user_path(@user) %>(<%= @user.follower_relationships.count %>)</p>
       <div class="col-xs-12">
       <p class="col-xs-12"><%= @user.university %>に在学中</p>
       </div>

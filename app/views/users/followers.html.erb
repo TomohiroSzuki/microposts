@@ -1,0 +1,7 @@
+<% if @followers.any? %>  
+  <% @followers.each do |followers| %>
+      <p><%= followers.name %></p>
+  <% end %>
+  <% else %>
+  <h2>現在フォローされているユーザーはいません</h2>
+<% end %>
